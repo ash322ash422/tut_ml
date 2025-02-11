@@ -1,1 +1,0 @@
-This is taken from https://github.com/nileshparab42/Diabetes-Detection/tree/master
