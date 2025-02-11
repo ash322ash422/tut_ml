@@ -153,8 +153,3 @@ It's worth noting that you can also use frameworks like Flask-CLI or Flask-Scrip
 
 - [Ashwani](https://github.com/ash322ash422) (Project Lead) 
   
-
-## Acknowledgements
-
-- This project was inspired by the work of the [CodeWithHarry](https://www.youtube.com/@CodeWithHarry).
-- We also used resources and tools from the [GeeksforGeeks](https://www.geeksforgeeks.org/speech-recognition-in-python-using-google-speech-api/) to develop and test our project.
