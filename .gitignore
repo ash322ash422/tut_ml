@@ -26,7 +26,7 @@ db.sqlite3
 
 *.mmdb
 
-*.png
+
 *.jpg
 *.jpeg
 *.mp3
