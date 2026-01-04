@@ -1,0 +1,319 @@
+A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
+
+# Exploratory Data Analysis (EDA) – Roadmap
+
+## Target Audience
+
+* Beginners in Data Science / ML
+* Students & early professionals
+* Anyone who knows basic Python & pandas
+
+---
+
+## PHASE 0: Foundation (Optional but Recommended)
+
+### Video 0.1 – What is EDA & Why It Matters
+
+**Goal:** Motivation & mindset
+**Topics:**
+
+* What is EDA?
+* EDA vs Data Cleaning vs Feature Engineering
+* Where EDA fits in the ML pipeline
+* Real-world impact (bad EDA → bad model)
+
+* How to get data from scikit    - TODO IMPORTANT
+---
+
+## PHASE 1: First Look at the Data (Pandas Basics for EDA)
+
+### Video 1.1 – Loading & Inspecting Data  - DONE
+
+**Topics:**
+
+* `read_csv()`, `read_excel()`
+* `head()`, `tail()`, `sample()`
+* `shape`
+* `columns`
+
+*Question-driven:*
+
+> “What kind of data are we dealing with?”
+
+---
+
+### Video 1.2 – Understanding Data Types
+
+**Topics:**
+
+* `dtypes`
+* Numeric vs categorical
+* object vs category
+* Why data types matter in EDA & ML
+
+*ML connection:*
+
+> Why models don’t understand strings
+
+---
+
+### Video 1.3 – Dataset Structure & Metadata
+
+**Topics:**
+
+* `info()`
+* duplicates remove it
+* Missing values overview
+* Memory usage
+* Index meaning (or lack of it)
+
+---
+
+## PHASE 2: Univariate Analysis (One Column at a Time)
+
+### Video2.1 – Univariate Categorical Data Analysis  - DONE
+
+**Topics:**
+
+* `value_counts()`
+* frequency & proportions
+* bar plots
+* cardinality problems
+
+*Business angle:*
+
+> “Which category dominates?”
+
+---
+
+### Video 2.2 – Univariate Numeric Descriptive Statistics (Numerical Data)
+
+**Topics:**
+
+* `describe()`
+* mean, median, mode
+* variance, std
+* min, max, percentiles
+
+*Story:*
+
+> “What does a ‘typical’ value look like?”
+
+---
+
+### Video 2.3 – Univariate Numeric Distribution Analysis
+
+**Topics:**
+
+* Histogram
+* KDE plot
+* Skewness
+* Normal vs non-normal distribution
+
+*Plots:* seaborn / matplotlib
+
+---
+
+
+### Video 2.4 – Outlier Detection (Univariate)
+
+**Topics:**
+
+* Boxplot
+* IQR method
+* Z-score intuition
+* When NOT to remove outliers
+
+*Important YouTube topic* (very searched)
+
+---
+
+## PHASE 3: Bivariate Analysis (Relationship Between Two Variables)
+
+### Video 3.1 – Numerical vs Numerical
+
+**Topics:**
+
+* Scatter plots
+* Correlation (Pearson)
+* Trend identification
+
+*ML angle:*
+
+> Linearity assumptions
+
+---
+
+### Video 3.2 – Numerical vs Categorical
+
+**Topics:**
+
+* Boxplots
+* Violin plots
+* Grouped statistics (`groupby()`)
+
+*Question:*
+
+> “Does salary depend on education?”
+
+---
+
+### Video 3.3 – Categorical vs Categorical
+
+**Topics:**
+
+* Cross-tabulation
+* Stacked bar charts
+* Proportions vs counts
+
+---
+
+## PHASE 4: Multivariate Analysis
+
+### Video 4.1 – Correlation Matrix & Heatmaps
+
+**Topics:**
+
+* `corr()`
+* Heatmap interpretation
+* Multicollinearity intuition
+
+---
+
+### Video 4.2 – Pairplots & Feature Interactions
+
+**Topics:**
+
+* `pairplot()`
+* Hue usage
+* Pattern spotting
+
+*Pro tip video:*
+
+> How to *read* pairplots properly
+
+---
+
+## PHASE 5: Missing Values Analysis
+
+### Video 5.1 – Understanding Missing Data
+
+**Topics:**
+
+* MCAR, MAR, MNAR (intuitive explanation)
+* `isnull()`, `sum()`
+* Missing value patterns
+
+---
+
+### Video 5.2 – Visualizing Missing Data
+
+**Topics:**
+
+* Heatmaps
+* Bar charts for missing %
+* Dataset health checks
+
+---
+###########################################
+
+
+## PHASE 6: EDA for Machine Learning
+
+### Video 6.1 – EDA from an ML Perspective
+
+**Topics:**
+
+* Target variable analysis
+* Class imbalance
+* Feature relevance
+* Data leakage awareness
+
+---
+
+### Video 6.2 – Feature Engineering Ideas from EDA
+
+**Topics:**
+
+* Binning
+* Log transformations
+* Encoding decisions
+* Feature dropping logic
+
+---
+
+## PHASE 7: EDA Case Studies (Most Important for YouTube)
+
+### Video 7.1 – EDA on a Real Dataset (End-to-End)
+
+**Example datasets:**
+
+* Titanic
+* E-commerce sales
+* House prices
+* Medical / finance (anonymized)
+
+*Flow:*
+
+1. Load data
+2. Ask questions
+3. Visualize
+4. Insights
+
+---
+
+### Video 7.2 – EDA for Business Questions
+
+**Examples:**
+
+* Why are sales dropping?
+* Which customers churn?
+* Which products drive revenue?
+
+*This is where your channel stands out.*
+
+---
+
+## PHASE 8: Visualization Best Practices
+
+### Video 8.1 – How to Choose the Right Plot
+
+**Topics:**
+
+* Histogram vs boxplot
+* Bar vs countplot
+* Pie chart myths
+
+---
+
+### Video 8.2 – Common EDA Mistakes
+
+**Topics:**
+
+* Misleading averages
+* Ignoring distributions
+* Correlation ≠ causation
+* Overplotting
+
+---
+
+## BONUS / ADVANCED (Optional)
+
+* EDA with large datasets
+* EDA with time series
+* Automated EDA tools (ydata-profiling)
+* EDA checklist before modeling
+
+---
+
+# Suggested YouTube Structure per Video
+
+**Perfect formula:**
+
+1. Problem / Question
+2. Dataset intro
+3. Code + visualization
+4. Interpretation
+5. Key takeaway
+
+---
