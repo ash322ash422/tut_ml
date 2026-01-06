@@ -130,7 +130,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 
 ## PHASE 3: Bivariate Analysis (Relationship Between Two Variables)
 
-### Video 3.1 – Numerical vs Numerical
+### Video 3.1 – Numerical vs Numerical  - DONE
 
 **Topics:**
 
@@ -139,12 +139,12 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 * Trend identification
 
 *ML angle:*
-
+ - DONE
 > Linearity assumptions
 
 ---
 
-### Video 3.2 – Numerical vs Categorical
+### Video 3.2 – Numerical vs Categorical - DONE
 
 **Topics:**
 
@@ -185,7 +185,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 **Topics:**
 
 * `pairplot()`
-* Hue usage
+* Hue usage...do it on swarm plot
 * Pattern spotting
 
 *Pro tip video:*
