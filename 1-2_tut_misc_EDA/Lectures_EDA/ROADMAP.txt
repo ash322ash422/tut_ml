@@ -86,7 +86,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 
 ---
 
-### Video 2.2 – Univariate Numeric Descriptive Statistics (Numerical Data)
+### Video 2.2 – Univariate Numeric Descriptive Statistics (Numerical Data) - DONE
 
 **Topics:**
 
@@ -101,7 +101,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 
 ---
 
-### Video 2.3 – Univariate Numeric Distribution Analysis
+### Video 2.3 – Univariate Numeric Distribution Analysis - DONE
 
 **Topics:**
 
@@ -158,7 +158,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 
 ---
 
-### Video 3.3 – Categorical vs Categorical
+### Video 3.3 – Categorical vs Categorical - DONE
 
 **Topics:**
 
