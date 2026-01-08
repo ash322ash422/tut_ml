@@ -170,7 +170,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 
 ## PHASE 4: Multivariate Analysis
 
-### Video 4.1 – Correlation Matrix & Heatmaps
+### Video 4.1 – Correlation Matrix & Heatmaps - DONE WITH BIVARIATE ANALYSIS
 
 **Topics:**
 
@@ -180,11 +180,12 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 
 ---
 
-### Video 4.2 – Pairplots & Feature Interactions
+### Video 4.2 – Pairplots & Feature Interactions   - DONE
 
 **Topics:**
 
 * `pairplot()`
+* group by statistics
 * Hue usage...do it on swarm plot
 * Pattern spotting
 
@@ -231,7 +232,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 
 ---
 
-### Video 6.2 – Feature Engineering Ideas from EDA
+### Video 6.2 – Feature Engineering Ideas from EDA     - DONE (2 videos - titanic + mpg)
 
 **Topics:**
 
