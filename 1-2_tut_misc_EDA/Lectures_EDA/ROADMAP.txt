@@ -120,9 +120,17 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 **Topics:**
 
 * Boxplot
-* IQR method
-* Z-score intuition
-* When NOT to remove outliers
+* IQR method                     - DONE 12 min (Theory + Code) (detection + removal)
+* Z-score intuition              - DONE Theory 9 min
+* Z-score intuition              - DONE Code 10 min
+
+* outlier detection using KNN (ADVANCED) - THEORY 6 min. - DONE
+* outlier detection using KNN (ADVANCED) - CODE 6 min.
+
+* Techniques - DONE
+* Tips - 
+
+* When NOT to remove outliers - DONE in above videos
 
 *Important YouTube topic* (very searched)
 
