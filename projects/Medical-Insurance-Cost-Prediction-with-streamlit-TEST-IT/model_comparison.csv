@@ -1,0 +1,6 @@
+Model,Train RMSE,Test RMSE,Train R²,Test R²,Overfitting (Y/N)
+Linear Regression,5165.64,4841.21,0.738,0.784,N
+Decision Tree,494.21,5731.98,0.998,0.697,Y
+Random Forest (Tuned),3920.18,4073.77,0.849,0.847,N
+Gradient Boosting (Tuned),3956.19,4071.66,0.846,0.847,N
+ Best Model: Random Forest (Tuned),3920.18,4073.77,0.849,0.847,N
