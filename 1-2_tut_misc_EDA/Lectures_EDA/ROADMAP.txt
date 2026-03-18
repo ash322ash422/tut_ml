@@ -115,7 +115,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 ---
 
 
-### Video 2.4 – Outlier Detection (Univariate)
+### Video 2.4 – Outlier Detection (Univariate and Multivariate)
 
 **Topics:**
 
@@ -126,6 +126,7 @@ A good source: https://www.youtube.com/watch?v=FNLLxYcUnow
 
 * outlier detection using KNN (ADVANCED) - THEORY 6 min. - DONE
 * outlier detection using KNN (ADVANCED) - CODE 6 min.
+* outlier detection using DBSCAN (ADVANCED) - THEORY + CODE 13 min - DONE
 
 * Techniques - DONE
 * Tips - 
