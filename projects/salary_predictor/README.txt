@@ -1,0 +1,1 @@
+Dataset taken from https://www.kaggle.com/datasets/rkiattisak/salaly-prediction-for-beginer
