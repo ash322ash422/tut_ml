@@ -72,7 +72,12 @@ st.markdown("""
 # ── Load ML model (cached) ─────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    bundle  = joblib.load("credit_model.pkl")
+    # bundle  = joblib.load("credit_model.pkl")
+    
+    from pathlib import Path
+    MODEL_PATH = Path(__file__).resolve().parent / "credit_model.pkl"
+    bundle = joblib.load(MODEL_PATH)
+    
     return bundle["model"], bundle["features"]
 
 model, FEATURES = load_model()
