@@ -146,13 +146,13 @@ with st.sidebar:
 # ═══════════════════════════════════════════════════════════════════════════════
 # MAIN PANEL
 # ═══════════════════════════════════════════════════════════════════════════════
-st.title("Credit Risk Analyzer")
+st.title("Credit Risk Analyzer by Sadeen")
 st.caption("Teaching demo — Scikit-Learn + OpenAI | adjust sliders and click Analyze")
 
 
-# ── Run analysis ──────────────────────────────────────────────────────────────
+# ── Run analysis 
 if analyze_btn:
-    # ── Derived feature ─────────────────────────────────────────────────────
+    # ── Derived feature
     debt_to_income = loan_amount / annual_income
 
     input_dict = {
@@ -167,12 +167,12 @@ if analyze_btn:
 
     X_input = pd.DataFrame([input_dict])[FEATURES]
 
-    # ── ML inference ────────────────────────────────────────────────────────
+    # ── ML inference 
     approval_prob  = model.predict_proba(X_input)[0][1]
-    decision_label = "APPROVED" if approval_prob >= 0.5 else "DENIED"
+    decision_label = "APPROVED" if approval_prob >= 0.3 else "DENIED"
     is_approved    = decision_label == "APPROVED"
 
-    # ── Top section: metrics ────────────────────────────────────────────────
+    # ── Top section: metrics 
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Income", f"${annual_income:,.0f}")
     col2.metric("Loan Amount", f"${loan_amount:,.0f}")
@@ -181,7 +181,7 @@ if analyze_btn:
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # ── Decision banner ─────────────────────────────────────────────────────
+    # ── Decision banner
     if is_approved:
         st.markdown('<div class="approved-banner">✅ APPROVED</div>', unsafe_allow_html=True)
     else:
@@ -206,29 +206,29 @@ if analyze_btn:
         )
 
         prompt = f"""You are a senior loan officer at a U.S. regulated bank.
-Based on the automated credit scoring result below, write a formal bank letter to the applicant.
+            Based on the automated credit scoring result below, write a formal bank letter to the applicant.
 
-─── Credit Score Summary ───
-Decision       : {decision_label}
-Approval Prob. : {approval_prob:.1%}
-Annual Income  : ${annual_income:,.0f}
-Loan Requested : ${loan_amount:,.0f}
-Debt-to-Income : {debt_to_income:.1%}
-Credit History : {credit_history_yrs} years
-Late Payments  : {num_late_payments}
-Employment     : {employment_yrs} years
-Open Accounts  : {num_open_accounts}{narrative_section}
-────────────────────────────
+            ─── Credit Score Summary ───
+            Decision       : {decision_label}
+            Approval Prob. : {approval_prob:.1%}
+            Annual Income  : ${annual_income:,.0f}
+            Loan Requested : ${loan_amount:,.0f}
+            Debt-to-Income : {debt_to_income:.1%}
+            Credit History : {credit_history_yrs} years
+            Late Payments  : {num_late_payments}
+            Employment     : {employment_yrs} years
+            Open Accounts  : {num_open_accounts}{narrative_section}
+            ────────────────────────────
 
-Instructions:
-- If APPROVED  : write a warm, professional approval letter with the amount and next steps.
-- If DENIED    : write an adverse-action notice that complies with the Equal Credit
-                 Opportunity Act (ECOA) and Fair Credit Reporting Act (FCRA).
-                 List the specific reasons for denial based on the data.
-- Use formal letter format: date, salutation, body paragraphs, closing, signature block.
-- Do NOT invent figures not listed above.
-- Keep the letter under 350 words.
-"""
+            Instructions:
+            - If APPROVED  : write a warm, professional approval letter with the amount and next steps.
+            - If DENIED    : write an adverse-action notice that complies with the Equal Credit
+                            Opportunity Act (ECOA) and Fair Credit Reporting Act (FCRA).
+                            List the specific reasons for denial based on the data.
+            - Use formal letter format: date, salutation, body paragraphs, closing, signature block.
+            - Do NOT invent figures not listed above.
+            - Keep the letter under 350 words.
+        """
 
         with st.spinner("GPT-4o-mini is drafting the letter …"):
             try:
